@@ -1,0 +1,123 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+body{margin:0;background:var(--cream)}
+#stage{width:1080px;height:1080px;position:relative;overflow:hidden;background:var(--cream)}
+.scene{position:absolute;inset:0;opacity:0}
+.big{font-family:Playfair;font-weight:800;color:var(--char);text-align:center;position:absolute;left:0;right:0}
+.cardstep{position:absolute;left:120px;width:840px;height:190px;background:#fff;border-radius:18px;box-shadow:0 18px 36px -18px rgba(54,57,59,.45),0 0 0 1px var(--beige);display:flex;overflow:hidden}
+.cardstep .t{width:330px;padding:26px 26px;display:flex;gap:18px;align-items:center}
+.cardstep .num{flex:none;width:58px;height:58px;border-radius:50%;background:var(--sage2);color:#fff;font-family:Playfair;font-weight:800;font-size:30px;display:flex;align-items:center;justify-content:center}
+.cardstep h3{font-family:Playfair;font-weight:800;font-size:31px;line-height:1.1}
+.cardstep .im{flex:1;overflow:hidden;border-left:1px solid var(--beige);background:var(--cream)}
+.cardstep .im img{width:900px;display:block}
+.bigchip{position:absolute;border-radius:14px;padding:16px 28px;font-weight:700;font-size:34px;box-shadow:0 14px 28px -12px rgba(54,57,59,.45)}
+</style></head><body>
+<div id="stage">
+  <svg class="sprig" data-sprig="-20,1100,-60,360,14" style="left:0;top:0" id="sp1"></svg>
+  <svg class="sprig" data-sprig="1100,1040,-125,360,14" style="left:0;top:0" id="sp2"></svg>
+
+  <!-- S1 hook -->
+  <div class="scene" id="S1">
+    <div class="abs center kicker" id="s1k" style="top:250px;font-size:24px">Every year, the same "surprises"…</div>
+    <div class="env" id="e1" style="left:150px;top:370px;width:230px;height:150px"><span style="font-size:36px;bottom:18px">Christmas</span></div>
+    <div class="env" id="e2" style="left:425px;top:350px;width:230px;height:150px"><span style="font-size:36px;bottom:18px">Car insurance</span></div>
+    <div class="env" id="e3" style="left:700px;top:370px;width:230px;height:150px"><span style="font-size:36px;bottom:18px">Birthdays</span></div>
+    <div class="big" id="s1t" style="top:600px;font-size:84px;line-height:1.05">No more money<br>surprises.</div>
+  </div>
+
+  <!-- S2 title + laptop -->
+  <div class="scene" id="S2">
+    <div class="abs center script" id="s2s" style="top:60px;font-size:72px">Plan ahead &amp; save calmly</div>
+    <div class="big" id="s2t" style="top:138px;font-size:104px;line-height:1">Sinking Funds</div>
+    <div class="abs center" id="s2k" style="top:262px;display:flex;justify-content:center;align-items:center;gap:22px">
+      <span style="width:110px;height:2px;background:var(--sage)"></span><span class="kicker" style="font-size:32px;letter-spacing:.42em">TRACKER</span><span style="width:110px;height:2px;background:var(--sage)"></span></div>
+    <div class="laptop" id="lap2" style="left:150px;top:350px;width:780px">
+      <div class="lid"><div class="scr" style="height:487px"><img src="shots/dash_top.png"></div></div><div class="base"></div></div>
+  </div>
+
+  <!-- S3 dashboard scroll -->
+  <div class="scene" id="S3">
+    <div class="abs center kicker" style="top:60px">The dashboard</div>
+    <div class="big" style="top:98px;font-size:72px">Fully Automated</div>
+    <div class="laptop" style="left:90px;top:220px;width:900px">
+      <div class="lid"><div class="scr" style="height:562px"><img id="scroll" src="shots/dashboard_full.png"></div></div><div class="base"></div></div>
+    <div class="pill" id="c1" style="position:absolute;left:110px;top:880px;font-size:26px"><i>8</i>KPI cards</div>
+    <div class="pill" id="c2" style="position:absolute;left:400px;top:880px;font-size:26px"><i>4</i>live charts</div>
+    <div class="pill" id="c3" style="position:absolute;left:690px;top:880px;font-size:26px"><i>✓</i>progress bars</div>
+  </div>
+
+  <!-- S4 status -->
+  <div class="scene" id="S4">
+    <div class="abs center kicker" style="top:60px">Every fund, color-coded</div>
+    <div class="big" style="top:98px;font-size:70px;line-height:1.05">Know Where<br>You Stand</div>
+    <div class="paper" id="tbl" style="left:90px;top:300px;width:900px"><img src="shots/dash_table.png"></div>
+    <div class="bigchip" id="b1" style="left:110px;top:620px;background:var(--sage);color:#fff">✓ Completed</div>
+    <div class="bigchip" id="b2" style="left:400px;top:700px;background:var(--amber);color:var(--ambertx)">◷ Due Soon</div>
+    <div class="bigchip" id="b3" style="left:680px;top:620px;background:var(--rose);color:var(--rosetx)">! Overdue</div>
+    <div class="abs center hand" id="s4h" style="top:820px;font-size:46px">status updates every day by itself</div>
+  </div>
+
+  <!-- S5 how -->
+  <div class="scene" id="S5">
+    <div class="big" style="top:70px;font-size:76px">As Easy as 1 · 2 · 3</div>
+    <div class="cardstep" id="k1" style="top:220px"><div class="t"><div class="num">1</div><h3>Add your funds</h3></div><div class="im"><img src="shots/sf.png" style="width:1050px"></div></div>
+    <div class="cardstep" id="k2" style="top:440px"><div class="t"><div class="num">2</div><h3>Log each deposit</h3></div><div class="im"><img src="shots/contrib.png" style="width:950px"></div></div>
+    <div class="cardstep" id="k3" style="top:660px"><div class="t"><div class="num">3</div><h3>Watch it update</h3></div><div class="im"><img src="shots/dash_kpi.png" style="width:950px"></div></div>
+    <div class="abs center hand" id="s5h" style="top:892px;font-size:44px">no formulas to write – ever!</div>
+  </div>
+
+  <!-- S6 CTA -->
+  <div class="scene" id="S6">
+    <div class="abs center script" style="top:120px;font-size:74px">your calm money plan</div>
+    <div class="big" id="s6t" style="top:200px;font-size:110px;line-height:1">Sinking Funds<br>Tracker</div>
+    <div class="abs center" id="s6f" style="top:480px;display:flex;flex-direction:column;align-items:center;gap:18px">
+      <span class="pill" style="font-size:28px"><i>7</i>linked, fully automated tabs</span>
+      <span class="pill" style="font-size:28px"><i>✓</i>Google Sheets + Excel</span>
+      <span class="pill" style="font-size:28px"><i>✓</i>Beginner guide included</span></div>
+    <div class="abs center" id="s6c" style="top:770px"><span style="display:inline-block;background:var(--terra);color:#fff;font-weight:700;font-size:34px;letter-spacing:.12em;padding:22px 48px;border-radius:50px;box-shadow:0 16px 30px -12px rgba(181,113,78,.6)">INSTANT DOWNLOAD</span></div>
+  </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);                       // ease-out cubic
+const back=x=>{const c=1.6;x=clamp(x);return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const scenes=[['S1',0,2.5],['S2',2.5,5.3],['S3',5.3,8.5],['S4',8.5,11.3],['S5',11.3,13.2],['S6',13.2,15.01]];
+function pop(el,t,a,d=.45,dy=40){const p=seg(t,a,a+d);el.style.opacity=eo(p);el.style.transform=`translateY(${(1-eo(p))*dy}px) scale(${.85+.15*back(p)})`;}
+function up(el,t,a,d=.6,dy=60){const p=eo(seg(t,a,a+d));el.style.opacity=p;el.style.transform=`translateY(${(1-p)*dy}px)`;}
+window.render=function(t){
+  for(const [id,a,b] of scenes){const fi=seg(t,a,a+.3),fo=1-seg(t,b-.3,b);$(id).style.opacity=(a===0?1:fi)*(b>15?1:fo);}
+  // S1
+  up($('s1k'),t,.05,.5,30);
+  ['e1','e2','e3'].forEach((e,i)=>{const p=back(seg(t,.3+i*.25,.8+i*.25));$(e).style.opacity=clamp(p);$(e).style.transform=`translateY(${(1-p)*-120}px) rotate(${[-7,3,8][i]*p}deg)`;});
+  up($('s1t'),t,1.25,.6,50);
+  // S2
+  up($('s2s'),t,2.6,.6,30);pop($('s2t'),t,2.75,.6,30);up($('s2k'),t,3.0,.5,20);
+  {const p=eo(seg(t,3.1,4.0));$('lap2').style.transform=`translateY(${(1-p)*500}px)`;}
+  // S3 scroll: dashboard_full 2371x4345 shown at 868px wide -> height 1591; screen 562
+  {const p=seg(t,5.9,8.2);const e=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;$('scroll').style.transform=`translateY(${-e*(1591-562)*0.62}px)`;}
+  pop($('c1'),t,5.8);pop($('c2'),t,6.3);pop($('c3'),t,6.8);
+  // S4
+  {const p=eo(seg(t,8.6,9.4));$('tbl').style.transform=`scale(${.9+.1*p}) rotate(${-1.5*p}deg)`;$('tbl').style.opacity=p;}
+  pop($('b1'),t,9.3);pop($('b2'),t,9.6);pop($('b3'),t,9.9);up($('s4h'),t,10.2,.5,20);
+  // S5
+  ['k1','k2','k3'].forEach((k,i)=>{const p=eo(seg(t,11.45+i*.35,11.95+i*.35));$(k).style.opacity=p;$(k).style.transform=`translateX(${(1-p)*(i%2?-200:200)}px)`;});
+  up($('s5h'),t,12.6,.4,20);
+  // S6
+  pop($('s6t'),t,13.3,.5,30);up($('s6f'),t,13.6,.5,30);
+  {const p=seg(t,13.9,14.3);const pulse=1+.04*Math.sin(Math.max(0,t-14.3)*6);$('s6c').style.opacity=eo(p);$('s6c').style.transform=`scale(${(.8+.2*back(p))*pulse})`;}
+  // sprigs sway
+  $('sp1').style.transform=`rotate(${Math.sin(t*1.3)*1.2}deg)`;$('sp2').style.transform=`rotate(${-Math.sin(t*1.1)*1.2}deg)`;
+};
+// sprigs (same generator as mockups)
+document.querySelectorAll('[data-sprig]').forEach(svg=>{const [x,y,ang,len,n]=svg.dataset.sprig.split(',').map(Number);
+ const ns='http://www.w3.org/2000/svg';svg.setAttribute('width',1080);svg.setAttribute('height',1080);svg.style.overflow='visible';svg.style.transformOrigin=`${x}px ${y}px`;
+ const a=ang*Math.PI/180;const ex=x+Math.cos(a)*len,ey=y+Math.sin(a)*len;const mx=x+Math.cos(a)*len/2+Math.sin(a)*30,my=y+Math.sin(a)*len/2-Math.cos(a)*30;
+ const p=document.createElementNS(ns,'path');p.setAttribute('d',`M${x} ${y} Q${mx} ${my} ${ex} ${ey}`);p.setAttribute('stroke','#8C8A6E');p.setAttribute('stroke-width','4');p.setAttribute('fill','none');svg.appendChild(p);
+ const L=p.getTotalLength();const cols=['#A3B18A','#9AAA86','#B7C4A3','#8FA07A','#C2CDB1'];
+ for(let i=1;i<=n;i++){const t=i/(n+1)*L;const pt=p.getPointAtLength(t);const pt2=p.getPointAtLength(Math.min(L,t+1));const da=Math.atan2(pt2.y-pt.y,pt2.x-pt.x)*180/Math.PI;
+  for(const s of [-1,1]){const r=26-i*0.9;const e=document.createElementNS(ns,'ellipse');e.setAttribute('cx',0);e.setAttribute('cy',s*r*0.95);e.setAttribute('rx',r*0.85);e.setAttribute('ry',r);
+   e.setAttribute('fill',cols[(i+(s>0))%5]);e.setAttribute('opacity','.92');e.setAttribute('transform',`translate(${pt.x} ${pt.y}) rotate(${da+(s*12)})`);svg.appendChild(e);}}});
+render(0);
+</script></body></html>

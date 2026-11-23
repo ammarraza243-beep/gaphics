@@ -1,0 +1,146 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="common.css">
+<style>
+.slide{margin:0 0 20px}
+.feat{position:absolute;display:flex;gap:14px;justify-content:center;left:0;right:0}
+.legend-row{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+.legend-row .chip{width:170px;text-align:center}
+.legend-row p{font-size:19px;color:var(--olive)}
+.tab{position:absolute;width:200px;height:300px;background:#fff;border-radius:12px;box-shadow:0 14px 28px -14px rgba(54,57,59,.4),0 0 0 1px var(--beige);overflow:hidden}
+.tab .th{height:200px;overflow:hidden;border-bottom:1px solid var(--beige);background:var(--cream)}
+.tab .th img{width:100%;display:block}
+.tab h4{font-family:Playfair;font-weight:700;font-size:21px;padding:12px 14px 2px;color:var(--char)}
+.tab p{font-size:13.5px;color:var(--olive);padding:0 14px;line-height:1.35}
+.tab .n{position:absolute;top:10px;left:10px;width:30px;height:30px;border-radius:50%;background:var(--olive);color:var(--cream);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
+.step{position:absolute;left:108px;right:108px;height:228px;background:#fff;border-radius:16px;box-shadow:0 16px 32px -16px rgba(54,57,59,.4),0 0 0 1px var(--beige);overflow:hidden;display:flex}
+.step .txt{width:330px;padding:30px 26px;position:relative}
+.step .num{width:52px;height:52px;border-radius:50%;background:var(--sage2);color:#fff;font-family:Playfair;font-weight:800;font-size:28px;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.step h3{font-family:Playfair;font-weight:800;font-size:30px;line-height:1.1;margin-bottom:8px}
+.step p{font-size:16.5px;color:var(--olive);line-height:1.4}
+.step .img{flex:1;overflow:hidden;background:var(--cream);border-left:1px solid var(--beige)}
+.step .img img{width:100%;display:block}
+.check{display:flex;gap:16px;align-items:flex-start;margin-bottom:21px}
+.check i{flex:none;width:36px;height:36px;border-radius:50%;background:var(--sage2);color:#fff;font-style:normal;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700}
+.check b{display:block;font-size:22px;font-weight:700;margin-bottom:3px}
+.check span{font-size:17px;color:var(--olive);line-height:1.35}
+</style></head><body>
+
+<!-- 1 HERO -->
+<section class="slide" id="s1">
+  <div class="blob" style="width:760px;height:760px;left:160px;top:250px;background:radial-gradient(circle,#EEF2E8 0,#EEF2E8 55%,rgba(238,242,232,0) 70%)"></div>
+  <svg class="sprig" data-sprig="-10,1080,-62,330,13" width="1" height="1" style="left:0;top:0"></svg>
+  <svg class="sprig" data-sprig="1090,1000,-128,330,13" width="1" height="1" style="left:0;top:0"></svg>
+  <div class="abs center script" style="top:34px;font-size:66px">Plan ahead &amp; save calmly</div>
+  <div class="abs center serif" style="top:104px;font-size:100px;line-height:1">Sinking Funds</div>
+  <div class="abs center" style="top:222px;display:flex;justify-content:center;align-items:center;gap:22px">
+    <span style="width:110px;height:2px;background:var(--sage)"></span>
+    <span class="kicker" style="font-size:30px;letter-spacing:.42em;color:var(--olive)">TRACKER</span>
+    <span style="width:110px;height:2px;background:var(--sage)"></span></div>
+  <div class="laptop" style="left:150px;top:300px;width:700px">
+    <div class="lid"><div class="scr" style="height:437px"><img src="shots/dash_top.png"></div></div><div class="base"></div></div>
+  <div class="tablet" style="left:560px;top:560px;width:412px;transform:rotate(2deg);padding:13px"><div class="scr"><img src="shots/dash_table.png"></div></div>
+  <div class="badge" style="left:108px;top:612px;width:158px;height:158px;transform:rotate(-8deg)">
+    <div style="font-family:Playfair;font-weight:800;font-size:46px;line-height:1">7</div>
+    <div style="font-weight:700;font-size:15px;letter-spacing:.16em;margin-top:4px">LINKED<br>TABS</div>
+    <div class="hand" style="color:var(--sagel);font-size:20px;margin-top:2px">fully automated</div></div>
+  <div class="feat" style="top:862px"><span class="pill"><i>✓</i>Auto dashboard</span><span class="pill"><i>✓</i>Progress bars</span><span class="pill"><i>✓</i>Status alerts</span></div>
+  <div class="strip">INSTANT DOWNLOAD <b></b> GOOGLE SHEETS + EXCEL <b></b> REUSABLE</div>
+</section>
+
+<!-- 2 DASHBOARD -->
+<section class="slide" id="s2">
+  <svg class="sprig" data-sprig="1100,120,200,280,11" width="1" height="1" style="left:0;top:0"></svg>
+  <div class="abs center kicker" style="top:58px">The Dashboard</div>
+  <div class="abs center serif" style="top:96px;font-size:72px;line-height:1.05">Your Savings,<br>at a Glance</div>
+  <div class="laptop" style="left:108px;top:300px;width:864px">
+    <div class="lid"><div class="scr" style="height:528px"><img src="shots/dash_top.png"></div></div><div class="base"></div></div>
+  <div class="mag" id="m2" style="left:70px;top:556px;width:290px;height:290px"><img src="shots/dash_top.png"></div>
+  <div class="abs center hand" style="top:236px;font-size:36px;transform:rotate(-2deg)">↓ totals update by themselves! ↓</div>
+  <div class="feat" style="top:916px"><span class="pill"><i>8</i>KPI cards</span><span class="pill"><i>4</i>live charts</span><span class="pill"><i>✓</i>upcoming dates</span></div>
+</section>
+
+<!-- 3 STATUS -->
+<section class="slide" id="s3">
+  <div class="abs center kicker" style="top:58px">Every fund, color-coded</div>
+  <div class="abs center serif" style="top:96px;font-size:68px;line-height:1.05">Know Exactly<br>Where You Stand</div>
+  <div class="paper" style="left:108px;top:292px;width:864px;transform:rotate(-1.2deg)"><img src="shots/dash_table.png"></div>
+  <div class="mag" id="m3" style="left:720px;top:470px;width:270px;height:270px"><img src="shots/dash_table.png"></div>
+  <div class="abs" style="left:150px;top:640px">
+    <div class="legend-row"><span class="chip" style="background:var(--sage);color:#fff">Completed</span><p>Goal reached – time to spend guilt-free</p></div>
+    <div class="legend-row"><span class="chip" style="background:var(--sagel);color:var(--olive)">In Progress</span><p>Saving steadily toward the target</p></div>
+    <div class="legend-row"><span class="chip" style="background:var(--amber);color:var(--ambertx)">Due Soon</span><p>Target date within 60 days</p></div>
+    <div class="legend-row"><span class="chip" style="background:var(--rose);color:var(--rosetx)">Overdue</span><p>Date passed, goal not yet reached</p></div>
+    <div class="legend-row"><span class="chip" style="background:#ECEAE6;color:#8A8D8F">Not Started</span><p>Nothing saved yet</p></div>
+  </div>
+  <div class="env" style="left:808px;top:880px;transform:rotate(8deg)"><span>Christmas</span></div>
+  <div class="env" style="left:880px;top:770px;transform:rotate(-6deg);width:130px"><span>Travel</span></div>
+</section>
+
+<!-- 4 INCLUDED -->
+<section class="slide" id="s4">
+  <div class="abs center script" style="top:40px;font-size:60px">everything you need</div>
+  <div class="abs center serif" style="top:108px;font-size:76px">What's Included</div>
+  <div id="tabs"></div>
+  <div class="strip">7 TABS <b></b> SAMPLE DATA + BLANK START <b></b> GOOGLE SHEETS + EXCEL</div>
+</section>
+
+<!-- 5 HOW IT WORKS -->
+<section class="slide" id="s5">
+  <div class="abs center kicker" style="top:50px">Simple as 1 · 2 · 3</div>
+  <div class="abs center serif" style="top:86px;font-size:76px">How It Works</div>
+  <div class="step" style="top:206px"><div class="txt"><div class="num">1</div><h3>Add your funds</h3><p>Name it, set a goal &amp; a target date. Pick a category from the dropdown.</p></div><div class="img"><img src="shots/sf.png" style="width:1100px"></div></div>
+  <div class="step" style="top:456px"><div class="txt"><div class="num">2</div><h3>Log each deposit</h3><p>Date, fund, amount. Spent from a fund? Enter a negative amount.</p></div><div class="img"><img src="shots/contrib.png" style="width:1000px"></div></div>
+  <div class="step" style="top:706px"><div class="txt"><div class="num">3</div><h3>Watch it update</h3><p>Balances, progress bars, status &amp; charts calculate automatically.</p></div><div class="img"><img src="shots/dash_kpi.png" style="width:1000px"></div></div>
+  <div class="abs center hand" style="top:950px;font-size:40px">no formulas to write – ever!</div>
+</section>
+
+<!-- 6 PLANNER + GOALS -->
+<section class="slide" id="s6">
+  <svg class="sprig" data-sprig="-20,180,-20,260,10" width="1" height="1" style="left:0;top:0"></svg>
+  <div class="abs center kicker" style="top:50px">Plan month by month</div>
+  <div class="abs center serif" style="top:86px;font-size:66px;line-height:1.05">Planned vs. Actual,<br>Side by Side</div>
+  <div class="paper" style="left:108px;top:282px;width:864px;height:420px;transform:rotate(1deg)"><img src="shots/planner.png"></div>
+  <div class="paper" style="left:160px;top:640px;width:780px;transform:rotate(-1.5deg)"><img src="shots/goals.png"></div>
+  <div class="feat" style="top:920px"><span class="pill"><i>✓</i>Monthly planner</span><span class="pill"><i>✓</i>Yearly summary</span><span class="pill"><i>✓</i>Long-term goals</span></div>
+</section>
+
+<!-- 7 BEGINNER -->
+<section class="slide" id="s7">
+  <div class="blob" style="width:600px;height:600px;left:-120px;top:420px;background:radial-gradient(circle,#EEF2E8 0,#EEF2E8 50%,rgba(238,242,232,0) 70%)"></div>
+  <div class="abs center script" style="top:40px;font-size:60px">no spreadsheet skills needed</div>
+  <div class="abs center serif" style="top:108px;font-size:74px">Beginner Friendly</div>
+  <div class="paper" style="left:108px;top:330px;width:440px;height:390px;transform:rotate(-2deg)"><img src="shots/start.png" style="width:780px"></div>
+  <div class="abs" style="left:590px;top:280px;width:390px">
+    <div class="check"><i>✓</i><div><b>Start Here guide</b><span>Step-by-step instructions + a sample scenario</span></div></div>
+    <div class="check"><i>✓</i><div><b>Color-coded cells</b><span>Cream = type here, sage = automatic</span></div></div>
+    <div class="check"><i>✓</i><div><b>Dropdown menus</b><span>Funds, categories &amp; payment methods</span></div></div>
+    <div class="check"><i>✓</i><div><b>Fully customizable</b><span>Edit categories &amp; currency in seconds</span></div></div>
+    <div class="check"><i>✓</i><div><b>Reusable</b><span>Clear the sample data &amp; start fresh</span></div></div>
+  </div>
+  <div class="strip">INSTANT DOWNLOAD <b></b> GOOGLE SHEETS + EXCEL <b></b> REUSABLE</div>
+</section>
+
+<script>
+// magnifiers: src natural width W, center (cx,cy) in source px, scale
+function mag(id,cx,cy,scale,W){const m=document.getElementById(id),img=m.querySelector('img');const R=m.clientWidth/2;
+ img.style.width=(W*scale)+'px';img.style.left=(R-cx*scale)+'px';img.style.top=(R-cy*scale)+'px';}
+mag('m2',300,390,0.48,2371);
+mag('m3',2235,440,0.95,2371);
+// tabs grid
+const tabs=[['Start Here','Guide, cell legend &amp; sample scenario','start.png',0],['Dashboard','8 KPI cards, 4 charts, upcoming dates','dash_top.png',0],
+['Sinking Funds','Goals, balances, status &amp; priority','sf.png',0],['Contributions','Log deposits &amp; withdrawals','contrib.png',0],
+['Monthly Planner','Planned vs actual + yearly summary','planner.png',0],['Savings Goals','Long-term goals &amp; monthly needed','goals.png',0],
+['Categories','14 editable categories &amp; lists','cats.png',0]];
+const T=document.getElementById('tabs');const x0=108,gap=21,w=200;
+tabs.forEach((t,i)=>{const r=Math.floor(i/4),c=i%4;let x=x0+c*(w+gap);if(r==1)x+= (w+gap)/2;const y=250+r*330;
+ T.insertAdjacentHTML('beforeend',`<div class="tab" style="left:${x}px;top:${y}px"><div class="n">${i+1}</div><div class="th"><img src="shots/${t[2]}" style="width:${t[2].startsWith('dash')?260:360}px"></div><h4>${t[0]}</h4><p>${t[1]}</p></div>`)});
+// eucalyptus sprigs: x,y,angleDeg,length,leaves
+document.querySelectorAll('[data-sprig]').forEach(svg=>{const [x,y,ang,len,n]=svg.dataset.sprig.split(',').map(Number);
+ const ns='http://www.w3.org/2000/svg';svg.setAttribute('width',1080);svg.setAttribute('height',1080);svg.style.overflow='visible';svg.style.pointerEvents='none';
+ const a=ang*Math.PI/180;const g=document.createElementNS(ns,'g');svg.appendChild(g);
+ const ex=x+Math.cos(a)*len,ey=y+Math.sin(a)*len;const mx=x+Math.cos(a)*len/2+Math.sin(a)*30,my=y+Math.sin(a)*len/2-Math.cos(a)*30;
+ const p=document.createElementNS(ns,'path');p.setAttribute('d',`M${x} ${y} Q${mx} ${my} ${ex} ${ey}`);p.setAttribute('stroke','#8C8A6E');p.setAttribute('stroke-width','4');p.setAttribute('fill','none');g.appendChild(p);
+ const L=p.getTotalLength();const cols=['#A3B18A','#9AAA86','#B7C4A3','#8FA07A','#C2CDB1'];
+ for(let i=1;i<=n;i++){const t=i/(n+1)*L;const pt=p.getPointAtLength(t);const pt2=p.getPointAtLength(Math.min(L,t+1));const da=Math.atan2(pt2.y-pt.y,pt2.x-pt.x)*180/Math.PI;
+  for(const s of [-1,1]){const r=26-i*0.9;const e=document.createElementNS(ns,'ellipse');e.setAttribute('cx',0);e.setAttribute('cy',s*r*0.95);e.setAttribute('rx',r*0.85);e.setAttribute('ry',r);
+   e.setAttribute('fill',cols[(i+(s>0))%5]);e.setAttribute('opacity','.92');e.setAttribute('transform',`translate(${pt.x} ${pt.y}) rotate(${da+(s*12)})`);g.appendChild(e);}}});
+</script></body></html>
